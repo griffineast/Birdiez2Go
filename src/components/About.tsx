@@ -114,7 +114,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-20 sm:py-32 bg-fairway/20">
+    <section id="about" className="py-20 sm:py-32 bg-dark-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -144,7 +144,7 @@ export default function About() {
                       <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper mb-6 leading-tight">
                         Golf Anytime,
                         <br />
-                        <span className="text-gold">Anywhere.</span>
+                        <span className="text-whisper">Anywhere.</span>
                       </h2>
                       <p className="text-sand/70 text-lg leading-relaxed mb-6">
                         Our team arrives 60 minutes prior to your event fully
@@ -187,7 +187,7 @@ export default function About() {
               <h2 className="font-serif text-3xl font-bold text-whisper mb-6 leading-tight">
                 Golf Anytime,
                 <br />
-                <span className="text-gold">Anywhere.</span>
+                <span className="text-whisper">Anywhere.</span>
               </h2>
               <p className="text-sand/70 text-lg leading-relaxed mb-6">
                 Our team arrives 60 minutes prior to your event fully

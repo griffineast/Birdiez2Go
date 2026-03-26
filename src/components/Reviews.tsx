@@ -23,7 +23,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-20 sm:py-32 bg-background">
+    <section id="reviews" className="py-20 sm:py-32 bg-dark-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
