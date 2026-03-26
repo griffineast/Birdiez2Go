@@ -48,7 +48,7 @@ export default function Services({
   onCtaClick: () => void;
 }) {
   return (
-    <section id="services" className="py-20 sm:py-32 bg-white">
+    <section id="services" className="py-20 sm:py-32 bg-dark-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -57,10 +57,10 @@ export default function Services({
           variants={fadeInUp}
           className="text-center mb-12 sm:mb-16"
         >
-          <p className="text-dark-grey uppercase tracking-[0.2em] text-sm mb-4 font-medium">
+          <p className="text-bright uppercase tracking-[0.2em] text-sm mb-4 font-medium">
             Our Services
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper">
             Choose Your Experience
           </h2>
         </motion.div>
@@ -78,26 +78,26 @@ export default function Services({
               variants={fadeInUp}
               className={`relative rounded-2xl border p-6 sm:p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(61,148,0,0.15)] ${
                 pkg.featured
-                  ? "border-forest/20 bg-sand scale-100 md:scale-105"
-                  : "border-dark-grey/10 bg-sand"
+                  ? "border-bright/30 bg-dark-card scale-100 md:scale-105"
+                  : "border-dark-grey/20 bg-dark-card"
               }`}
             >
               {pkg.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-forest text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full border border-forest">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-bright text-whisper text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full">
                   Most Popular
                 </div>
               )}
 
-              <h3 className="font-serif text-2xl font-bold text-forest mb-2">
+              <h3 className="font-serif text-2xl font-bold text-whisper mb-2">
                 {pkg.name}
               </h3>
-              <p className="text-dark-grey text-sm mb-6 italic">{pkg.tagline}</p>
+              <p className="text-dark-grey/80 text-sm mb-6 italic">{pkg.tagline}</p>
 
               <ul className="space-y-3 mb-8 flex-1">
                 {pkg.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <svg
-                      className="w-5 h-5 text-forest mt-0.5 shrink-0"
+                      className="w-5 h-5 text-bright mt-0.5 shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -109,7 +109,7 @@ export default function Services({
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    <span className="text-dark-grey text-sm">{feature}</span>
+                    <span className="text-dark-grey/80 text-sm">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -118,8 +118,8 @@ export default function Services({
                 onClick={onCtaClick}
                 className={`w-full py-3 rounded-full font-semibold uppercase tracking-wider text-sm transition-all duration-300 ${
                   pkg.featured
-                    ? "bg-white border border-forest text-forest hover:scale-105"
-                    : "bg-white border border-forest text-forest hover:scale-105"
+                    ? "bg-bright text-whisper hover:scale-105"
+                    : "bg-dark-card border border-bright/30 text-whisper hover:bg-bright hover:text-whisper hover:scale-105"
                 }`}
               >
                 Get a Quote

@@ -43,7 +43,7 @@ export default function Hero({ onCtaClick }: { onCtaClick: () => void }) {
           variants={fadeIn}
           initial="hidden"
           animate="visible"
-          className="text-gold uppercase tracking-[0.3em] text-sm sm:text-base mb-4 sm:mb-6 font-medium"
+          className="text-bright uppercase tracking-[0.3em] text-sm sm:text-base mb-4 sm:mb-6 font-medium"
         >
           Mobile Golf Simulator Experiences
         </motion.p>
@@ -55,7 +55,7 @@ export default function Hero({ onCtaClick }: { onCtaClick: () => void }) {
           className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold text-whisper leading-tight mb-4 sm:mb-6"
         >
           The Ultimate Golf Experience
-          <span className="block text-gold">&mdash; Delivered</span>
+          <span className="block text-bright">&mdash; Delivered</span>
         </motion.h1>
 
         <motion.div
@@ -72,7 +72,7 @@ export default function Hero({ onCtaClick }: { onCtaClick: () => void }) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.5 }}
-              className="text-sand/80 text-lg sm:text-xl md:text-2xl font-light absolute inset-0 text-center"
+              className="text-whisper text-lg sm:text-xl md:text-2xl font-light absolute inset-0 text-center"
             >
               {taglines[taglineIndex]}
             </motion.p>
@@ -85,7 +85,7 @@ export default function Hero({ onCtaClick }: { onCtaClick: () => void }) {
           animate="visible"
           transition={{ delay: 0.4 }}
           onClick={onCtaClick}
-          className="bg-white border border-forest text-forest font-bold px-8 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg uppercase tracking-wider hover:scale-105 hover:shadow-[0_0_20px_rgba(242,242,242,0.3)] transition-all duration-300"
+          className="bg-bright text-whisper font-bold px-8 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg uppercase tracking-wider hover:scale-105 hover:shadow-[0_0_20px_rgba(46,115,80,0.3)] transition-all duration-300"
         >
           Book Your Event
         </motion.button>

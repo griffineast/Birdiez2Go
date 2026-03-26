@@ -5,10 +5,12 @@
   --fairway: #245D40;
   --bright: #2E7350;
   --whisper: #FFFFFF;
-  --sand: #F2F2F2;
+  --sand: #1E1E1E;
   --gold: #FCE300;
-  --dark-grey: #6B6F73;
-  --background: #122D1F;
+  --dark-grey: #A0A0A0;
+  --dark-bg: #0D0D0D;
+  --dark-card: #1A1A1A;
+  --background: #0D0D0D;
   --foreground: #FFFFFF;
 }
 
@@ -20,6 +22,8 @@
   --color-sand: var(--sand);
   --color-gold: var(--gold);
   --color-dark-grey: var(--dark-grey);
+  --color-dark-bg: var(--dark-bg);
+  --color-dark-card: var(--dark-card);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "Inter", system-ui, sans-serif;

@@ -105,7 +105,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 sm:py-32 bg-sand">
+    <section id="faq" className="py-20 sm:py-32 bg-dark-card">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -114,10 +114,10 @@ export default function FAQ() {
           variants={fadeInUp}
           className="text-center mb-12 sm:mb-16"
         >
-          <p className="text-dark-grey uppercase tracking-[0.2em] text-sm mb-4 font-medium">
+          <p className="text-bright uppercase tracking-[0.2em] text-sm mb-4 font-medium">
             FAQ
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper">
             Common Questions
           </h2>
         </motion.div>
@@ -133,21 +133,21 @@ export default function FAQ() {
             <motion.div
               key={index}
               variants={fadeInUp}
-              className="border border-dark-grey/10 rounded-xl overflow-hidden bg-white"
+              className="border border-dark-grey/20 rounded-xl overflow-hidden bg-dark-bg"
             >
               <button
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
-                className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 hover:bg-sand transition-colors"
+                className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 hover:bg-dark-card transition-colors"
               >
-                <span className="text-forest font-medium text-base">
+                <span className="text-whisper font-medium text-base">
                   {faq.question}
                 </span>
                 <motion.svg
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.2 }}
-                  className="w-5 h-5 text-forest shrink-0"
+                  className="w-5 h-5 text-bright shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -169,7 +169,7 @@ export default function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <p className="px-6 pb-4 text-dark-grey text-base leading-relaxed">
+                    <p className="px-6 pb-4 text-dark-grey/80 text-base leading-relaxed">
                       {faq.answer}
                     </p>
                   </motion.div>

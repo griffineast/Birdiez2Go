@@ -32,8 +32,8 @@ export default function Header({
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white shadow-lg"
-          : "bg-white/90 backdrop-blur-md"
+          ? "bg-dark-bg/95 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,7 +41,7 @@ export default function Header({
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <Image
-              src={`${BASE_PATH}/images/birdiez_hat_highres-no-background.png`}
+              src={`${BASE_PATH}/images/birdiez_lettering_white.png`}
               alt="Birdiez2Go"
               width={160}
               height={40}
@@ -56,14 +56,14 @@ export default function Header({
               <a
                 key={link.href}
                 href={link.href}
-                className="text-forest hover:text-gold transition-colors text-sm uppercase tracking-widest"
+                className="text-whisper/80 hover:text-bright transition-colors text-sm uppercase tracking-widest"
               >
                 {link.label}
               </a>
             ))}
             <button
               onClick={onCtaClick}
-              className="bg-white border border-forest text-forest font-semibold px-5 py-2 rounded-full text-sm uppercase tracking-wider hover:scale-110 transition-transform"
+              className="bg-bright text-whisper font-semibold px-5 py-2 rounded-full text-sm uppercase tracking-wider hover:scale-110 transition-transform"
             >
               Get a Quote
             </button>
@@ -76,17 +76,17 @@ export default function Header({
             aria-label="Toggle menu"
           >
             <span
-              className={`w-6 h-0.5 bg-forest transition-transform ${
+              className={`w-6 h-0.5 bg-whisper transition-transform ${
                 mobileOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
-              className={`w-6 h-0.5 bg-forest transition-opacity ${
+              className={`w-6 h-0.5 bg-whisper transition-opacity ${
                 mobileOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`w-6 h-0.5 bg-forest transition-transform ${
+              className={`w-6 h-0.5 bg-whisper transition-transform ${
                 mobileOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />
@@ -101,7 +101,7 @@ export default function Header({
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-forest/10"
+            className="md:hidden bg-dark-bg/95 backdrop-blur-md border-t border-whisper/10"
           >
             <nav className="flex flex-col items-center gap-4 py-6">
               {navLinks.map((link) => (
@@ -109,7 +109,7 @@ export default function Header({
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-forest hover:text-gold transition-colors text-sm uppercase tracking-widest"
+                  className="text-whisper/80 hover:text-bright transition-colors text-sm uppercase tracking-widest"
                 >
                   {link.label}
                 </a>
@@ -119,7 +119,7 @@ export default function Header({
                   setMobileOpen(false);
                   onCtaClick();
                 }}
-                className="bg-white border border-forest text-forest font-semibold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider hover:scale-110 transition-transform mt-2"
+                className="bg-bright text-whisper font-semibold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider hover:scale-110 transition-transform mt-2"
               >
                 Get a Quote
               </button>
