@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --forest: #143200;
-  --fairway: #1F6200;
-  --bright: #3D9400;
-  --whisper: #F5F0E8;
-  --sand: #F0EAD6;
-  --gold: #FFD100;
-  --background: #0C1A00;
-  --foreground: #F5F0E8;
+  --forest: #1C4932;
+  --fairway: #245D40;
+  --bright: #2E7350;
+  --whisper: #FFFFFF;
+  --sand: #F2F2F2;
+  --gold: #FCE300;
+  --background: #122D1F;
+  --foreground: #FFFFFF;
 }
 
 @theme inline {
@@ -42,10 +42,10 @@ body {
 /* Gold glow for CTA buttons */
 @keyframes pulse-gold {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(255, 209, 0, 0.4);
+    box-shadow: 0 0 0 0 rgba(252, 227, 0, 0.4);
   }
   50% {
-    box-shadow: 0 0 20px 8px rgba(255, 209, 0, 0.2);
+    box-shadow: 0 0 20px 8px rgba(252, 227, 0, 0.2);
   }
 }
 
