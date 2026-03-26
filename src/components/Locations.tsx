@@ -25,7 +25,7 @@ const locations = [
 
 export default function Locations() {
   return (
-    <section id="locations" className="py-20 sm:py-32 bg-dark-card">
+    <section id="locations" className="py-20 sm:py-32 bg-forest">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -68,7 +68,7 @@ export default function Locations() {
                 <motion.div
                   key={loc.name}
                   variants={fadeInUp}
-                  className="border-l-2 border-bright/30 pl-5"
+                  className="border-l-2 border-whisper/30 pl-5"
                 >
                   <h3 className="font-serif text-xl font-bold text-whisper mb-1">
                     {loc.name}
