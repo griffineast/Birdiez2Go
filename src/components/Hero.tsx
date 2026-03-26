@@ -85,7 +85,7 @@ export default function Hero({ onCtaClick }: { onCtaClick: () => void }) {
           animate="visible"
           transition={{ delay: 0.4 }}
           onClick={onCtaClick}
-          className="bg-gold text-forest font-bold px-8 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg uppercase tracking-wider hover:scale-105 hover:shadow-[0_0_30px_rgba(255,209,0,0.3)] transition-all duration-300"
+          className="bg-white border border-forest text-forest font-bold px-8 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg uppercase tracking-wider hover:scale-105 hover:shadow-[0_0_20px_rgba(242,242,242,0.3)] transition-all duration-300"
         >
           Book Your Event
         </motion.button>

@@ -221,7 +221,7 @@ export default function About() {
             {/* Desktop: slide button */}
             <button
               onClick={() => setShowDetail(!showDetail)}
-              className="hidden md:block bg-gold/10 border border-gold/30 text-gold font-semibold px-6 py-3 rounded-full text-sm uppercase tracking-wider hover:bg-gold hover:text-forest transition-all duration-300"
+              className="hidden md:block bg-white border border-forest text-forest font-semibold px-6 py-3 rounded-full text-sm uppercase tracking-wider hover:scale-105 transition-all duration-300"
             >
               {showDetail
                 ? "\u2190 Back to About"
@@ -231,7 +231,7 @@ export default function About() {
             {/* Mobile: expand/collapse button */}
             <button
               onClick={() => setMobileExpanded(!mobileExpanded)}
-              className="md:hidden bg-gold/10 border border-gold/30 text-gold font-semibold px-6 py-3 rounded-full text-sm uppercase tracking-wider hover:bg-gold hover:text-forest transition-all duration-300"
+              className="md:hidden bg-white border border-forest text-forest font-semibold px-6 py-3 rounded-full text-sm uppercase tracking-wider hover:scale-105 transition-all duration-300"
             >
               {mobileExpanded
                 ? "Collapse"

@@ -83,7 +83,7 @@ export default function Services({
               }`}
             >
               {pkg.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-forest text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-forest text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full border border-forest">
                   Most Popular
                 </div>
               )}
@@ -118,8 +118,8 @@ export default function Services({
                 onClick={onCtaClick}
                 className={`w-full py-3 rounded-full font-semibold uppercase tracking-wider text-sm transition-all duration-300 ${
                   pkg.featured
-                    ? "bg-gold text-forest hover:shadow-[0_0_20px_rgba(255,209,0,0.3)] hover:scale-105"
-                    : "border border-gold/50 text-gold hover:bg-gold hover:text-forest"
+                    ? "bg-white border border-forest text-forest hover:scale-105"
+                    : "bg-white/10 border border-forest/50 text-whisper hover:bg-white hover:text-forest"
                 }`}
               >
                 Get a Quote

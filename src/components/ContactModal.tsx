@@ -170,7 +170,7 @@ export default function ContactModal({
 
               <button
                 type="submit"
-                className="w-full bg-gold text-forest font-bold py-3 rounded-full text-sm uppercase tracking-wider hover:shadow-[0_0_20px_rgba(255,209,0,0.3)] hover:scale-[1.02] transition-all duration-300"
+                className="w-full bg-white border border-forest text-forest font-bold py-3 rounded-full text-sm uppercase tracking-wider hover:scale-[1.02] transition-all duration-300"
               >
                 Send Inquiry
               </button>
