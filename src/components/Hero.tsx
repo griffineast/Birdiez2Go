@@ -25,7 +25,7 @@ export default function Hero({ onCtaClick }: { onCtaClick: () => void }) {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background gradient overlay — replace with image/video when assets ready */}
-      <div className="absolute inset-0 bg-gradient-to-b from-forest via-fairway/40 to-background z-0" />
+      <div className="absolute inset-0 bg-forest z-0" />
 
       {/* Placeholder for background image/video */}
       {/* <video
