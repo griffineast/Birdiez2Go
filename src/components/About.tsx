@@ -46,7 +46,7 @@ function WhiteGloveContent() {
   return (
     <>
       <h3 className="font-serif text-2xl font-bold text-whisper mb-4">
-        What <span className="text-gold">White-Glove</span> Means
+        What <span className="text-whisper">White-Glove</span> Means
       </h3>
       <ul className="space-y-3 mb-8">
         {whiteGloveBullets.map((bullet) => (
@@ -71,7 +71,7 @@ function WhiteGloveContent() {
 
       <h3 className="font-serif text-2xl font-bold text-whisper mb-4">
         Fully Equipped{" "}
-        <span className="text-gold">Professional Setup</span>
+        <span className="text-whisper">Professional Setup</span>
       </h3>
       <div className="space-y-3">
         {equipment.map((item) => (

@@ -76,7 +76,7 @@ export default function Services({
             <motion.div
               key={pkg.name}
               variants={fadeInUp}
-              className={`relative rounded-2xl border p-6 sm:p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(61,148,0,0.15)] border-forest/20 bg-sand ${
+              className={`relative rounded-2xl border p-6 sm:p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(61,148,0,0.15)] border-gold/50 bg-forest ${
                 pkg.featured ? "scale-100 md:scale-105" : ""
               }`}
             >
@@ -86,16 +86,16 @@ export default function Services({
                 </div>
               )}
 
-              <h3 className="font-serif text-2xl font-bold text-forest mb-2">
+              <h3 className="font-serif text-2xl font-bold text-whisper mb-2">
                 {pkg.name}
               </h3>
-              <p className="text-dark-grey text-sm mb-6 italic">{pkg.tagline}</p>
+              <p className="text-whisper/80 text-sm mb-6 italic">{pkg.tagline}</p>
 
               <ul className="space-y-3 mb-8 flex-1">
                 {pkg.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <svg
-                      className="w-5 h-5 text-forest mt-0.5 shrink-0"
+                      className="w-5 h-5 text-whisper mt-0.5 shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -107,14 +107,18 @@ export default function Services({
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    <span className="text-dark-grey text-sm">{feature}</span>
+                    <span className="text-whisper/80 text-sm">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               <button
                 onClick={onCtaClick}
-                className="w-full py-3 rounded-full font-semibold uppercase tracking-wider text-sm transition-all duration-300 bg-white border border-forest text-forest hover:scale-105"
+                className={`w-full py-3 rounded-full font-semibold uppercase tracking-wider text-sm transition-all duration-300 border hover:scale-105 ${
+                  pkg.featured
+                    ? "bg-white border-white text-forest"
+                    : "bg-transparent border-whisper text-whisper hover:bg-white hover:text-forest"
+                }`}
               >
                 Get a Quote
               </button>

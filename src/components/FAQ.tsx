@@ -133,13 +133,13 @@ export default function FAQ() {
             <motion.div
               key={index}
               variants={fadeInUp}
-              className="border border-whisper/10 rounded-xl overflow-hidden bg-forest/20"
+              className="border border-whisper/20 rounded-xl overflow-hidden bg-fairway/40"
             >
               <button
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
-                className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 hover:bg-forest/30 transition-colors"
+                className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 hover:bg-fairway/60 transition-colors"
               >
                 <span className="text-whisper font-medium text-base">
                   {faq.question}
