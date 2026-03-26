@@ -6,7 +6,7 @@ import { BASE_PATH } from "@/lib/prefix";
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="py-20 sm:py-32 bg-forest">
+    <section id="gallery" className="py-20 sm:py-32 bg-dark-card">
       <div className="px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
