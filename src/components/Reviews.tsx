@@ -23,7 +23,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-20 sm:py-32 bg-background">
+    <section id="reviews" className="py-20 sm:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -32,17 +32,17 @@ export default function Reviews() {
           variants={fadeInUp}
           className="text-center mb-12 sm:mb-16"
         >
-          <p className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-medium">
+          <p className="text-dark-grey uppercase tracking-[0.2em] text-sm mb-4 font-medium">
             Reviews
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest mb-4">
             What Our Clients Say
           </h2>
           <div className="flex justify-center gap-1">
             {[...Array(5)].map((_, i) => (
               <svg
                 key={i}
-                className="w-7 h-7 text-gold"
+                className="w-7 h-7 text-forest"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -63,24 +63,24 @@ export default function Reviews() {
             <motion.div
               key={review.name}
               variants={fadeInUp}
-              className="bg-forest/30 border border-whisper/10 rounded-2xl p-6 sm:p-8 flex flex-col"
+              className="bg-forest border border-gold/50 rounded-2xl p-6 sm:p-8 flex flex-col"
             >
               {/* Quote icon */}
               <svg
-                className="w-10 h-10 text-gold/30 mb-4"
+                className="w-10 h-10 text-whisper/30 mb-4"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609L9.978 5.151c-2.432.917-3.995 3.638-3.995 5.849H10v10H0z" />
               </svg>
 
-              <p className="text-sand/70 text-base leading-relaxed mb-6 flex-1 italic">
+              <p className="text-whisper/80 text-base leading-relaxed mb-6 flex-1 italic">
                 &ldquo;{review.text}&rdquo;
               </p>
 
               <div>
                 <p className="text-whisper font-semibold">{review.name}</p>
-                <p className="text-gold/60 text-sm">{review.context}</p>
+                <p className="text-whisper/60 text-sm">{review.context}</p>
               </div>
             </motion.div>
           ))}

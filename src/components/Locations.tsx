@@ -25,7 +25,7 @@ const locations = [
 
 export default function Locations() {
   return (
-    <section id="locations" className="py-20 sm:py-32 bg-background">
+    <section id="locations" className="py-20 sm:py-32 bg-forest">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -36,7 +36,7 @@ export default function Locations() {
           {/* Image placeholder — will be replaced with Long Island tee logo */}
           <motion.div
             variants={slideInLeft}
-            className="relative aspect-square rounded-2xl overflow-hidden bg-forest/50 border border-whisper/10"
+            className="relative aspect-square rounded-2xl overflow-hidden bg-background border border-whisper/10"
           >
             <Image
               src={`${BASE_PATH}/images/birdiez2go-no-background-2.png`}
@@ -54,7 +54,7 @@ export default function Locations() {
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper mb-8 leading-tight">
               Where We
               <br />
-              <span className="text-gold">Bring the Game</span>
+              <span className="text-whisper">Bring the Game</span>
             </h2>
 
             <motion.div
