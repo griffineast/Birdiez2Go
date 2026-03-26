@@ -48,7 +48,7 @@ export default function Services({
   onCtaClick: () => void;
 }) {
   return (
-    <section id="services" className="py-20 sm:py-32 bg-background">
+    <section id="services" className="py-20 sm:py-32 bg-forest">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -78,8 +78,8 @@ export default function Services({
               variants={fadeInUp}
               className={`relative rounded-2xl border p-6 sm:p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(61,148,0,0.15)] ${
                 pkg.featured
-                  ? "border-gold/50 bg-fairway/20 scale-100 md:scale-105"
-                  : "border-whisper/10 bg-forest/30"
+                  ? "border-whisper/20 bg-background scale-100 md:scale-105"
+                  : "border-whisper/10 bg-background"
               }`}
             >
               {pkg.featured && (

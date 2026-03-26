@@ -54,7 +54,7 @@ export default function Locations() {
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper mb-8 leading-tight">
               Where We
               <br />
-              <span className="text-gold">Bring the Game</span>
+              <span className="text-whisper">Bring the Game</span>
             </h2>
 
             <motion.div
