@@ -6,7 +6,7 @@ import { BASE_PATH } from "@/lib/prefix";
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="py-20 sm:py-32 bg-fairway/10">
+    <section id="gallery" className="py-20 sm:py-32 bg-sand">
       <div className="px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -15,10 +15,10 @@ export default function Gallery() {
           variants={fadeInUp}
           className="text-center mb-12 sm:mb-16"
         >
-          <p className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-medium">
+          <p className="text-dark-grey uppercase tracking-[0.2em] text-sm mb-4 font-medium">
             Gallery
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest">
             See It in Action
           </h2>
         </motion.div>

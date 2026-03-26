@@ -45,14 +45,14 @@ const equipment = [
 function WhiteGloveContent() {
   return (
     <>
-      <h3 className="font-serif text-2xl font-bold text-whisper mb-4">
-        What <span className="text-gold">White-Glove</span> Means
+      <h3 className="font-serif text-2xl font-bold text-forest mb-4">
+        What <span className="text-forest">White-Glove</span> Means
       </h3>
       <ul className="space-y-3 mb-8">
         {whiteGloveBullets.map((bullet) => (
           <li key={bullet} className="flex items-start gap-3">
             <svg
-              className="w-5 h-5 text-bright mt-0.5 shrink-0"
+              className="w-5 h-5 text-forest mt-0.5 shrink-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -64,26 +64,26 @@ function WhiteGloveContent() {
                 d="M5 13l4 4L19 7"
               />
             </svg>
-            <span className="text-sand/70 text-sm">{bullet}</span>
+            <span className="text-dark-grey text-sm">{bullet}</span>
           </li>
         ))}
       </ul>
 
-      <h3 className="font-serif text-2xl font-bold text-whisper mb-4">
+      <h3 className="font-serif text-2xl font-bold text-forest mb-4">
         Fully Equipped{" "}
-        <span className="text-gold">Professional Setup</span>
+        <span className="text-forest">Professional Setup</span>
       </h3>
       <div className="space-y-3">
         {equipment.map((item) => (
           <div key={item.label}>
-            <p className="text-sand/70 text-sm">
-              <span className="text-whisper font-semibold">
+            <p className="text-dark-grey text-sm">
+              <span className="text-forest font-semibold">
                 {item.label}
               </span>{" "}
               — {item.detail}
             </p>
             {item.courses && (
-              <p className="text-sand/50 text-xs mt-1 ml-0 italic">
+              <p className="text-dark-grey/70 text-xs mt-1 ml-0 italic">
                 {item.courses}
               </p>
             )}
@@ -114,7 +114,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-20 sm:py-32 bg-fairway/20">
+    <section id="about" className="py-20 sm:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -138,26 +138,26 @@ export default function About() {
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                   >
                     <motion.div variants={slideInLeft}>
-                      <p className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-medium">
+                      <p className="text-dark-grey uppercase tracking-[0.2em] text-sm mb-4 font-medium">
                         About Us
                       </p>
-                      <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper mb-6 leading-tight">
+                      <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest mb-6 leading-tight">
                         Golf Anytime,
                         <br />
-                        <span className="text-gold">Anywhere.</span>
+                        <span className="text-forest">Anywhere.</span>
                       </h2>
-                      <p className="text-sand/70 text-lg leading-relaxed mb-6">
+                      <p className="text-dark-grey text-lg leading-relaxed mb-6">
                         Our team arrives 60 minutes prior to your event fully
                         equipped with everything needed, including screen,
                         projector, premium simulator technology, turf, and clubs.
                       </p>
-                      <p className="text-sand/70 text-lg leading-relaxed mb-6">
+                      <p className="text-dark-grey text-lg leading-relaxed mb-6">
                         Throughout the event, our staff supports every guest,
                         guiding them through the technology, managing scoring and
                         competitions, and ensuring a seamless, engaging experience
                         from first swing to final leaderboard.
                       </p>
-                      <p className="text-sand/70 text-lg leading-relaxed">
+                      <p className="text-dark-grey text-lg leading-relaxed">
                         At the end of the event, we complete breakdown within 60
                         minutes and leave your space exactly as we found it.
                       </p>
@@ -181,26 +181,26 @@ export default function About() {
 
             {/* Mobile static text */}
             <div className="md:hidden">
-              <p className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-medium">
+              <p className="text-dark-grey uppercase tracking-[0.2em] text-sm mb-4 font-medium">
                 About Us
               </p>
-              <h2 className="font-serif text-3xl font-bold text-whisper mb-6 leading-tight">
+              <h2 className="font-serif text-3xl font-bold text-forest mb-6 leading-tight">
                 Golf Anytime,
                 <br />
-                <span className="text-gold">Anywhere.</span>
+                <span className="text-forest">Anywhere.</span>
               </h2>
-              <p className="text-sand/70 text-lg leading-relaxed mb-6">
+              <p className="text-dark-grey text-lg leading-relaxed mb-6">
                 Our team arrives 60 minutes prior to your event fully
                 equipped with everything needed, including screen,
                 projector, premium simulator technology, turf, and clubs.
               </p>
-              <p className="text-sand/70 text-lg leading-relaxed mb-6">
+              <p className="text-dark-grey text-lg leading-relaxed mb-6">
                 Throughout the event, our staff supports every guest,
                 guiding them through the technology, managing scoring and
                 competitions, and ensuring a seamless, engaging experience
                 from first swing to final leaderboard.
               </p>
-              <p className="text-sand/70 text-lg leading-relaxed">
+              <p className="text-dark-grey text-lg leading-relaxed">
                 At the end of the event, we complete breakdown within 60
                 minutes and leave your space exactly as we found it.
               </p>

@@ -7,6 +7,7 @@
   --whisper: #FFFFFF;
   --sand: #F2F2F2;
   --gold: #FCE300;
+  --dark-grey: #6B6F73;
   --background: #122D1F;
   --foreground: #FFFFFF;
 }
@@ -18,6 +19,7 @@
   --color-whisper: var(--whisper);
   --color-sand: var(--sand);
   --color-gold: var(--gold);
+  --color-dark-grey: var(--dark-grey);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "Inter", system-ui, sans-serif;

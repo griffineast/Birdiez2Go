@@ -25,7 +25,7 @@ const locations = [
 
 export default function Locations() {
   return (
-    <section id="locations" className="py-20 sm:py-32 bg-background">
+    <section id="locations" className="py-20 sm:py-32 bg-sand">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -48,13 +48,13 @@ export default function Locations() {
 
           {/* Text */}
           <motion.div variants={slideInRight}>
-            <p className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-medium">
+            <p className="text-dark-grey uppercase tracking-[0.2em] text-sm mb-4 font-medium">
               Locations
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper mb-8 leading-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-forest mb-8 leading-tight">
               Where We
               <br />
-              <span className="text-gold">Bring the Game</span>
+              <span className="text-forest">Bring the Game</span>
             </h2>
 
             <motion.div
@@ -68,12 +68,12 @@ export default function Locations() {
                 <motion.div
                   key={loc.name}
                   variants={fadeInUp}
-                  className="border-l-2 border-gold/30 pl-5"
+                  className="border-l-2 border-forest/30 pl-5"
                 >
-                  <h3 className="font-serif text-xl font-bold text-whisper mb-1">
+                  <h3 className="font-serif text-xl font-bold text-forest mb-1">
                     {loc.name}
                   </h3>
-                  <p className="text-sand/60 text-sm leading-relaxed">
+                  <p className="text-dark-grey text-sm leading-relaxed">
                     {loc.description}
                   </p>
                 </motion.div>
