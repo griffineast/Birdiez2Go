@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --forest: #143200;
+  --fairway: #1F6200;
+  --bright: #3D9400;
+  --whisper: #F5F0E8;
+  --sand: #F0EAD6;
+  --gold: #FFD100;
+  --background: #0C1A00;
+  --foreground: #F5F0E8;
+}
+
+@theme inline {
+  --color-forest: var(--forest);
+  --color-fairway: var(--fairway);
+  --color-bright: var(--bright);
+  --color-whisper: var(--whisper);
+  --color-sand: var(--sand);
+  --color-gold: var(--gold);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+[role="button"] {
+  cursor: pointer !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Gold glow for CTA buttons */
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 209, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 8px rgba(255, 209, 0, 0.2);
+  }
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+/* Scroll indicator bounce */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
