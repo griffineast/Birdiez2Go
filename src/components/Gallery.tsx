@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/lib/animations";
+import { BASE_PATH } from "@/lib/prefix";
 
 export default function Gallery() {
   return (
@@ -30,7 +31,7 @@ export default function Gallery() {
           className="max-w-sm mx-auto rounded-2xl overflow-hidden border border-whisper/10"
         >
           <video
-            src="/videos/birdiez2go-in-action.mp4"
+            src={`${BASE_PATH}/videos/birdiez2go-in-action.mp4`}
             controls
             autoPlay
             muted

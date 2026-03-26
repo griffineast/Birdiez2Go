@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BASE_PATH } from "@/lib/prefix";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/images/birdiez_lettering_yellow.png"
+              src={`${BASE_PATH}/images/birdiez_lettering_yellow.png`}
               alt="Birdiez2Go"
               width={180}
               height={45}

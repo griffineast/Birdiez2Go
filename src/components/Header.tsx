@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { BASE_PATH } from "@/lib/prefix";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -40,7 +41,7 @@ export default function Header({
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <Image
-              src="/images/birdiez_lettering_yellow.png"
+              src={`${BASE_PATH}/images/birdiez_lettering_yellow.png`}
               alt="Birdiez2Go"
               width={160}
               height={40}

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { BASE_PATH } from "@/lib/prefix";
 import { slideInLeft, slideInRight } from "@/lib/animations";
 
 const whiteGloveBullets = [
@@ -175,7 +176,7 @@ export default function About() {
           <motion.div variants={slideInRight} className="flex flex-col gap-4">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-forest/50 border border-whisper/10">
               <Image
-                src="/images/birdiez2go-setup-mock.png"
+                src={`${BASE_PATH}/images/birdiez2go-setup-mock.png`}
                 alt="Birdiez2Go mobile golf simulator setup"
                 fill
                 className="object-cover"

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { BASE_PATH } from "@/lib/prefix";
 import { fadeInUp, slideInLeft, slideInRight, staggerContainer } from "@/lib/animations";
 
 const locations = [
@@ -38,7 +39,7 @@ export default function Locations() {
             className="relative aspect-square rounded-2xl overflow-hidden bg-forest/50 border border-whisper/10"
           >
             <Image
-              src="/images/birdiez2go-no-background-2.png"
+              src={`${BASE_PATH}/images/birdiez2go-no-background-2.png`}
               alt="Birdiez2Go logo"
               fill
               className="object-contain p-8"
