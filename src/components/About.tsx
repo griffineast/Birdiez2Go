@@ -46,7 +46,7 @@ function WhiteGloveContent() {
   return (
     <>
       <h3 className="font-serif text-2xl font-bold text-whisper mb-4">
-        What <span className="text-gold">White-Glove</span> Means
+        What <span className="text-whisper">White-Glove</span> Means
       </h3>
       <ul className="space-y-3 mb-8">
         {whiteGloveBullets.map((bullet) => (
@@ -71,7 +71,7 @@ function WhiteGloveContent() {
 
       <h3 className="font-serif text-2xl font-bold text-whisper mb-4">
         Fully Equipped{" "}
-        <span className="text-gold">Professional Setup</span>
+        <span className="text-whisper">Professional Setup</span>
       </h3>
       <div className="space-y-3">
         {equipment.map((item) => (
@@ -114,7 +114,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-20 sm:py-32 bg-fairway/20">
+    <section id="about" className="py-20 sm:py-32 bg-forest">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -144,7 +144,7 @@ export default function About() {
                       <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-whisper mb-6 leading-tight">
                         Golf Anytime,
                         <br />
-                        <span className="text-gold">Anywhere.</span>
+                        <span className="text-whisper">Anywhere.</span>
                       </h2>
                       <p className="text-sand/70 text-lg leading-relaxed mb-6">
                         Our team arrives 60 minutes prior to your event fully
@@ -187,7 +187,7 @@ export default function About() {
               <h2 className="font-serif text-3xl font-bold text-whisper mb-6 leading-tight">
                 Golf Anytime,
                 <br />
-                <span className="text-gold">Anywhere.</span>
+                <span className="text-whisper">Anywhere.</span>
               </h2>
               <p className="text-sand/70 text-lg leading-relaxed mb-6">
                 Our team arrives 60 minutes prior to your event fully
@@ -221,7 +221,7 @@ export default function About() {
             {/* Desktop: slide button */}
             <button
               onClick={() => setShowDetail(!showDetail)}
-              className="hidden md:block bg-gold/10 border border-gold/30 text-gold font-semibold px-6 py-3 rounded-full text-sm uppercase tracking-wider hover:bg-gold hover:text-forest transition-all duration-300"
+              className="hidden md:block bg-white border border-forest text-forest font-semibold px-6 py-3 rounded-full text-sm uppercase tracking-wider hover:scale-105 transition-all duration-300"
             >
               {showDetail
                 ? "\u2190 Back to About"
@@ -231,7 +231,7 @@ export default function About() {
             {/* Mobile: expand/collapse button */}
             <button
               onClick={() => setMobileExpanded(!mobileExpanded)}
-              className="md:hidden bg-gold/10 border border-gold/30 text-gold font-semibold px-6 py-3 rounded-full text-sm uppercase tracking-wider hover:bg-gold hover:text-forest transition-all duration-300"
+              className="md:hidden bg-white border border-forest text-forest font-semibold px-6 py-3 rounded-full text-sm uppercase tracking-wider hover:scale-105 transition-all duration-300"
             >
               {mobileExpanded
                 ? "Collapse"

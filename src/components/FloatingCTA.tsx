@@ -22,7 +22,7 @@ export default function FloatingCTA({ onClick }: { onClick: () => void }) {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.8, y: 20 }}
           onClick={onClick}
-          className="fixed bottom-6 right-6 z-40 bg-gold text-forest font-bold px-6 py-3 rounded-full shadow-lg animate-pulse-gold hover:scale-110 transition-transform text-sm uppercase tracking-wider"
+          className="fixed bottom-6 right-6 z-40 bg-white border border-forest text-forest font-bold px-6 py-3 rounded-full shadow-lg hover:scale-110 transition-transform text-sm uppercase tracking-wider"
         >
           Get a Quote
         </motion.button>

@@ -3,19 +3,19 @@ import { BASE_PATH } from "@/lib/prefix";
 
 export default function Footer() {
   return (
-    <footer className="bg-forest border-t border-whisper/10">
+    <footer className="bg-white border-t border-forest/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Brand */}
           <div>
             <Image
-              src={`${BASE_PATH}/images/birdiez_lettering_yellow.png`}
+              src={`${BASE_PATH}/images/birdiez_hat_highres-no-background.png`}
               alt="Birdiez2Go"
               width={180}
               height={45}
               className="h-10 w-auto mb-3"
             />
-            <p className="text-sand/60 text-sm leading-relaxed mb-4">
+            <p className="text-forest/60 text-sm leading-relaxed mb-4">
               The ultimate golf experience — delivered. Premium mobile golf
               simulator entertainment for any event.
             </p>
@@ -41,12 +41,12 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-whisper font-semibold text-sm uppercase tracking-wider mb-4">
+            <h4 className="text-forest font-semibold text-sm uppercase tracking-wider mb-4">
               Contact
             </h4>
             <a
               href="mailto:Info@Birdiez2go.com"
-              className="text-sand/60 hover:text-gold transition-colors text-sm"
+              className="text-forest/60 hover:text-gold transition-colors text-sm"
             >
               Info@Birdiez2go.com
             </a>
@@ -54,7 +54,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-whisper font-semibold text-sm uppercase tracking-wider mb-4">
+            <h4 className="text-forest font-semibold text-sm uppercase tracking-wider mb-4">
               Quick Links
             </h4>
             <nav className="flex flex-col gap-2">
@@ -63,7 +63,7 @@ export default function Footer() {
                   <a
                     key={link}
                     href={`#${link.toLowerCase()}`}
-                    className="text-sand/60 hover:text-gold transition-colors text-sm"
+                    className="text-forest/60 hover:text-gold transition-colors text-sm"
                   >
                     {link}
                   </a>
@@ -74,8 +74,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-whisper/10 text-center">
-          <p className="text-sand/40 text-sm">
+        <div className="mt-12 pt-8 border-t border-forest/10 text-center">
+          <p className="text-forest/40 text-sm">
             &copy; {new Date().getFullYear()} Birdiez2Go. All rights reserved.
           </p>
         </div>

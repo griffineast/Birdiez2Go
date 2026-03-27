@@ -7,9 +7,9 @@ import { BASE_PATH } from "@/lib/prefix";
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Locations", href: "#locations" },
   { label: "Services", href: "#services" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Locations", href: "#locations" },
   { label: "Reviews", href: "#reviews" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -32,8 +32,8 @@ export default function Header({
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-forest/95 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
+          ? "bg-white shadow-lg"
+          : "bg-white/90 backdrop-blur-md"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,11 +41,11 @@ export default function Header({
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <Image
-              src={`${BASE_PATH}/images/birdiez_lettering_yellow.png`}
+              src={`${BASE_PATH}/images/birdiez_hat_highres-no-background.png`}
               alt="Birdiez2Go"
               width={160}
               height={40}
-              className="h-8 sm:h-10 w-auto"
+              className="h-12 sm:h-14 w-auto"
               priority
             />
           </a>
@@ -56,14 +56,14 @@ export default function Header({
               <a
                 key={link.href}
                 href={link.href}
-                className="text-whisper/80 hover:text-gold transition-colors text-sm uppercase tracking-widest"
+                className="text-forest hover:text-gold transition-colors text-sm uppercase tracking-widest"
               >
                 {link.label}
               </a>
             ))}
             <button
               onClick={onCtaClick}
-              className="bg-gold text-forest font-semibold px-5 py-2 rounded-full text-sm uppercase tracking-wider hover:scale-110 transition-transform"
+              className="bg-white border border-forest text-forest font-semibold px-5 py-2 rounded-full text-sm uppercase tracking-wider hover:scale-110 transition-transform"
             >
               Get a Quote
             </button>
@@ -71,22 +71,22 @@ export default function Header({
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2"
+            className="md:hidden flex flex-col gap-2 p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
             <span
-              className={`w-6 h-0.5 bg-whisper transition-transform ${
+              className={`w-7 h-0.5 bg-forest transition-transform ${
                 mobileOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
-              className={`w-6 h-0.5 bg-whisper transition-opacity ${
+              className={`w-7 h-0.5 bg-forest transition-opacity ${
                 mobileOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`w-6 h-0.5 bg-whisper transition-transform ${
+              className={`w-7 h-0.5 bg-forest transition-transform ${
                 mobileOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />
@@ -101,7 +101,7 @@ export default function Header({
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-forest/95 backdrop-blur-md border-t border-whisper/10"
+            className="md:hidden bg-white border-t border-forest/10"
           >
             <nav className="flex flex-col items-center gap-4 py-6">
               {navLinks.map((link) => (
@@ -109,7 +109,7 @@ export default function Header({
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-whisper/80 hover:text-gold transition-colors text-sm uppercase tracking-widest"
+                  className="text-forest hover:text-gold transition-colors text-sm uppercase tracking-widest"
                 >
                   {link.label}
                 </a>
@@ -119,7 +119,7 @@ export default function Header({
                   setMobileOpen(false);
                   onCtaClick();
                 }}
-                className="bg-gold text-forest font-semibold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider hover:bg-bright hover:text-white transition-colors mt-2"
+                className="bg-white border border-forest text-forest font-semibold px-6 py-2.5 rounded-full text-sm uppercase tracking-wider hover:scale-110 transition-transform mt-2"
               >
                 Get a Quote
               </button>

@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const isGithubPages = process.env.DEPLOY_TARGET === "github-pages";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  output: isGithubPages ? "export" : undefined,
   basePath: isGithubPages ? "/Birdiez2Go" : "",
   env: {
     NEXT_PUBLIC_BASE_PATH: isGithubPages ? "/Birdiez2Go" : "",

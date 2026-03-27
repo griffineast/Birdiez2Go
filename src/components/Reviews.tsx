@@ -23,7 +23,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-20 sm:py-32 bg-background">
+    <section id="reviews" className="py-20 sm:py-32 bg-forest">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -63,7 +63,7 @@ export default function Reviews() {
             <motion.div
               key={review.name}
               variants={fadeInUp}
-              className="bg-forest/30 border border-whisper/10 rounded-2xl p-6 sm:p-8 flex flex-col"
+              className="bg-background border border-whisper/10 rounded-2xl p-6 sm:p-8 flex flex-col hover:-translate-y-2 transition-all duration-300"
             >
               {/* Quote icon */}
               <svg
