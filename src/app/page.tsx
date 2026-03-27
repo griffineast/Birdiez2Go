@@ -25,9 +25,9 @@ export default function Home() {
       <main>
         <Hero onCtaClick={openModal} />
         <About />
-        <Locations />
         <Services onCtaClick={openModal} />
         <Gallery />
+        <Locations />
         <Reviews />
         <FAQ />
       </main>

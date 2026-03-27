@@ -7,9 +7,9 @@ import { BASE_PATH } from "@/lib/prefix";
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Locations", href: "#locations" },
   { label: "Services", href: "#services" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Locations", href: "#locations" },
   { label: "Reviews", href: "#reviews" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -45,7 +45,7 @@ export default function Header({
               alt="Birdiez2Go"
               width={160}
               height={40}
-              className="h-8 sm:h-10 w-auto"
+              className="h-12 sm:h-14 w-auto"
               priority
             />
           </a>
@@ -71,22 +71,22 @@ export default function Header({
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2"
+            className="md:hidden flex flex-col gap-2 p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
             <span
-              className={`w-6 h-0.5 bg-forest transition-transform ${
+              className={`w-7 h-0.5 bg-forest transition-transform ${
                 mobileOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
-              className={`w-6 h-0.5 bg-forest transition-opacity ${
+              className={`w-7 h-0.5 bg-forest transition-opacity ${
                 mobileOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`w-6 h-0.5 bg-forest transition-transform ${
+              className={`w-7 h-0.5 bg-forest transition-transform ${
                 mobileOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />

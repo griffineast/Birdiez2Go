@@ -10,10 +10,12 @@ const packages = [
     features: [
       "3 hours of simulator time",
       "Full setup + breakdown",
-      "1x on-site attendant",
-      "Access to 40+ courses & games",
-      "Closest-to-the-pin and long-drive competitions",
-      "Up to ~25 rotating players",
+      "1 on-site attendant",
+      "Access to 40+ courses",
+      "Competitions such as closest-to-the-pin and long-drive",
+      "Up to 25 rotating players",
+      "Additional TV display for simulator gameplay, leaderboard tracking, or live sports viewing",
+      "Additional hours available upon request",
     ],
     featured: false,
   },
@@ -22,10 +24,10 @@ const packages = [
     tagline: "Best value for events & corporate groups",
     features: [
       "4 hours of simulator time",
-      "Everything in Par package",
+      "Everything in the Par package",
       "Tournament mode + leaderboard",
       "Extended play time for larger groups",
-      "1x-2x on-site attendants",
+      "1-2 on-site attendants",
     ],
     featured: true,
   },
@@ -34,9 +36,9 @@ const packages = [
     tagline: "Premium experience for high-end events",
     features: [
       "5 hours of simulator time",
-      "Everything in Birdie package",
+      "Everything in the Birdie package",
       "Priority support & customization",
-      "2x+ on-site attendants",
+      "2+ on-site attendants",
     ],
     featured: false,
   },
@@ -48,7 +50,7 @@ export default function Services({
   onCtaClick: () => void;
 }) {
   return (
-    <section id="services" className="py-20 sm:py-32 bg-forest">
+    <section id="services" className="py-20 sm:py-32 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -78,8 +80,8 @@ export default function Services({
               variants={fadeInUp}
               className={`relative rounded-2xl border p-6 sm:p-8 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(61,148,0,0.15)] ${
                 pkg.featured
-                  ? "border-whisper/20 bg-background scale-100 md:scale-105"
-                  : "border-whisper/10 bg-background"
+                  ? "border-whisper/20 bg-forest scale-100 md:scale-105"
+                  : "border-whisper/10 bg-forest"
               }`}
             >
               {pkg.featured && (
@@ -97,7 +99,7 @@ export default function Services({
                 {pkg.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <svg
-                      className="w-5 h-5 text-bright mt-0.5 shrink-0"
+                      className="w-5 h-5 text-whisper mt-0.5 shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
