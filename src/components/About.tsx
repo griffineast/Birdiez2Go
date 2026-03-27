@@ -52,7 +52,7 @@ function WhiteGloveContent() {
         {whiteGloveBullets.map((bullet) => (
           <li key={bullet} className="flex items-start gap-3">
             <svg
-              className="w-5 h-5 text-bright mt-0.5 shrink-0"
+              className="w-5 h-5 text-whisper mt-0.5 shrink-0"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
