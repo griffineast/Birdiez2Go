@@ -42,9 +42,11 @@ const inputClass =
 export default function ContactModal({
   isOpen,
   onClose,
+  source,
 }: {
   isOpen: boolean;
   onClose: () => void;
+  source?: string;
 }) {
   const [formData, setFormData] = useState<FormData>(INITIAL_FORM);
   const [status, setStatus] = useState<Status>("idle");
@@ -90,7 +92,7 @@ export default function ContactModal({
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, source: source || "" }),
       });
 
       const data = await res.json();

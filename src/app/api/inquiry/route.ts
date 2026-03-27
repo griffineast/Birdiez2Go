@@ -15,6 +15,7 @@ const FIELD_MAP: Record<string, string> = {
   heardAbout: "LEADCF8",
   guests: "LEADCF51",
   eventDate: "LEADCF116",
+  source: "LEADCF9",
 };
 
 // Hidden fields required by Zoho CRM WebToLeadForm.

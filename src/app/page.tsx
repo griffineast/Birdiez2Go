@@ -15,25 +15,33 @@ import ContactModal from "@/components/ContactModal";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [inquirySource, setInquirySource] = useState("");
 
-  const openModal = () => setModalOpen(true);
+  const openModal = (source: string) => {
+    setInquirySource(source);
+    setModalOpen(true);
+  };
   const closeModal = () => setModalOpen(false);
 
   return (
     <>
-      <Header onCtaClick={openModal} />
+      <Header onCtaClick={() => openModal("Nav")} />
       <main>
-        <Hero onCtaClick={openModal} />
+        <Hero onCtaClick={() => openModal("Hero")} />
         <About />
-        <Services onCtaClick={openModal} />
+        <Services onCtaClick={(source: string) => openModal(source)} />
         <Gallery />
         <Locations />
         <Reviews />
         <FAQ />
       </main>
       <Footer />
-      <FloatingCTA onClick={openModal} />
-      <ContactModal isOpen={modalOpen} onClose={closeModal} />
+      <FloatingCTA onClick={() => openModal("Floating Button")} />
+      <ContactModal
+        isOpen={modalOpen}
+        onClose={closeModal}
+        source={inquirySource}
+      />
     </>
   );
 }

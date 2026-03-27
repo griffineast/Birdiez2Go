@@ -47,7 +47,7 @@ const packages = [
 export default function Services({
   onCtaClick,
 }: {
-  onCtaClick: () => void;
+  onCtaClick: (source: string) => void;
 }) {
   return (
     <section id="services" className="py-20 sm:py-32 bg-background">
@@ -117,7 +117,7 @@ export default function Services({
               </ul>
 
               <button
-                onClick={onCtaClick}
+                onClick={() => onCtaClick(pkg.name)}
                 className={`w-full py-3 rounded-full font-semibold uppercase tracking-wider text-sm transition-all duration-300 ${
                   pkg.featured
                     ? "bg-white border border-forest text-forest hover:scale-105"
