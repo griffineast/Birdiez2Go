@@ -44,12 +44,25 @@ export default function Footer() {
             <h4 className="text-forest font-semibold text-sm uppercase tracking-wider mb-4">
               Contact
             </h4>
-            <a
-              href="mailto:Info@Birdiez2go.com"
-              className="text-forest/60 hover:text-gold transition-colors text-sm"
-            >
-              Info@Birdiez2go.com
-            </a>
+            <div className="flex flex-col gap-2">
+              <a
+                href="mailto:Info@Birdiez2go.com"
+                className="text-forest/60 hover:text-gold transition-colors text-sm"
+              >
+                Info@Birdiez2go.com
+              </a>
+              <a
+                href="tel:+16312137775"
+                className="text-forest/60 hover:text-gold transition-colors text-sm"
+              >
+                (631) 213-7775
+              </a>
+              <p className="text-forest/60 text-sm">
+                101 Hallock Landing Rd
+                <br />
+                Rocky Point, NY 11778
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}
