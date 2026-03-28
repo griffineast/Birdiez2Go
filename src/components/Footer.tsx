@@ -57,11 +57,6 @@ export default function Footer() {
               >
                 (631) 213-7775
               </a>
-              <p className="text-forest/60 text-sm">
-                101 Hallock Landing Rd
-                <br />
-                Rocky Point, NY 11778
-              </p>
             </div>
           </div>
 
