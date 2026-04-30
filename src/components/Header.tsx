@@ -41,7 +41,7 @@ export default function Header({
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <Image
-              src={`${BASE_PATH}/images/birdiez_hat_highres-no-background.png`}
+              src={`${BASE_PATH}/images/birdiez-letters-logo.png`}
               alt="Birdiez2Go"
               width={160}
               height={40}

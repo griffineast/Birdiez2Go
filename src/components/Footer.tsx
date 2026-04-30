@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src={`${BASE_PATH}/images/birdiez_hat_highres-no-background.png`}
+              src={`${BASE_PATH}/images/birdiez-letters-logo.png`}
               alt="Birdiez2Go"
               width={180}
               height={45}
