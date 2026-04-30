@@ -1,11 +1,26 @@
 import type { Metadata } from "next";
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/500.css";
-import "@fontsource/inter/600.css";
-import "@fontsource/inter/700.css";
-import "@fontsource/playfair-display/400.css";
-import "@fontsource/playfair-display/700.css";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const inter = localFont({
+  src: [
+    { path: "./fonts/inter-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/inter-latin-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/inter-latin-600-normal.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/inter-latin-700-normal.woff2", weight: "700", style: "normal" },
+  ],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const playfair = localFont({
+  src: [
+    { path: "./fonts/playfair-display-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/playfair-display-latin-700-normal.woff2", weight: "700", style: "normal" },
+  ],
+  display: "swap",
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
   title: "Birdiez2Go — The Ultimate Golf Experience, Delivered",
@@ -32,7 +47,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased overflow-x-hidden">
+    <html
+      lang="en"
+      className={`${inter.variable} ${playfair.variable} h-full antialiased overflow-x-hidden`}
+    >
       <body className="min-h-full flex flex-col overflow-x-hidden">{children}</body>
     </html>
   );
