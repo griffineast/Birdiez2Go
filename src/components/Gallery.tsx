@@ -13,7 +13,7 @@ type Slide =
 const slides: Slide[] = [
   {
     type: "video",
-    src: "/videos/birdiez2go-in-action-optimized.mp4",
+    src: "/videos/kate-clip-optimized.mp4",
     alt: "Birdiez2Go in action",
   },
   {
@@ -30,6 +30,11 @@ const slides: Slide[] = [
     type: "image",
     src: "/images/setup-with-monitor.JPEG",
     alt: "Simulator setup with monitor",
+  },
+  {
+    type: "image",
+    src: "/images/darker-setup.jpg",
+    alt: "Simulator setup at dusk",
   },
 ];
 
@@ -88,11 +93,11 @@ export default function Gallery() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeInUp}
-          className={`mx-auto ${slide.type === "video" ? "max-w-sm" : "max-w-2xl"}`}
+          className="max-w-2xl mx-auto"
         >
           <div
             className={`relative rounded-2xl overflow-hidden border border-whisper/10 bg-black ${
-              slide.type === "video" ? "aspect-9/16" : "aspect-4/3"
+              slide.type === "video" ? "aspect-video" : "aspect-4/3"
             }`}
           >
             <AnimatePresence initial={false} custom={direction} mode="wait">
